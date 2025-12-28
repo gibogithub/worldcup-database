@@ -147,3 +147,17 @@ pg_dump --username=freecodecamp --dbname=worldcup --file=worldcup.sql
 __vsc_prompt_cmd_original
 head worldcup.sql
 git add .
+git commit -m "Project completed: worldcup database dump, insert script, and queries"
+__vsc_prompt_cmd_original
+createdb -U freecodecamp worldcup_test
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+psql -U freecodecamp -d worldcup_test -f worldcup.sql
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+psql -U freecodecamp -d worldcup_test
+git branch
+git branch
+git push origin master
+git init
+git add .
